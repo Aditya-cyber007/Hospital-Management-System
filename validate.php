@@ -1,5 +1,5 @@
 <?php 
-import databsae.php
+include databsae.php
 
 if(isset($_POST['email'])){
      
@@ -13,7 +13,7 @@ if(isset($_POST['email'])){
         $_SESSION['pass']=$_POST['pass'];
         $_SESSION['type']=$_POST['type'];
     
-    $sql="select * from admin where email='".$email."'AND pass='".$password."'AND type='".$type."' limit 1";
+    $sql="select * from admins.admin1 where email='".$email."'AND pass='".$password."'AND type='".$type."'";
     $result=mysqli_query($conn,$sql);
 
     if(mysqli_num_rows($result)==1){
