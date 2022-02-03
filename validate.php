@@ -1,11 +1,5 @@
 <?php 
-
-$host="localhost";
-$user="root";
-$password="";
-$db="user";
-
-$conn=mysqli_connect($host,$user,$password,$db);
+import databsae.php
 
 if(isset($_POST['email'])){
      
