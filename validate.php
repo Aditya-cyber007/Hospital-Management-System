@@ -1,5 +1,5 @@
 <?php 
-include databsae.php
+include 'database.php'
 
 if(isset($_POST['email'])){
      
